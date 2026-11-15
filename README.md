@@ -13,6 +13,8 @@ simplest way to run this for free
    5. change networking from premium to standard(standard gives 200gb outbound free)
    6. ensure both internal and external ip is ephemeral and not static.
    7. you will also need to enable http and https traffic
+   you can also do the same with oracle cloud but the setup is more complicated however they do give you 10TB outbound traffic for free
+
 4. ssh into the server and install DDclient, certbot, libwebsockets-dev and your choice of c compiler
 5. setup dd client, the config settings is wrong so change them. i used cloudflare so here is the example, with api token
    protocol=cloudflare,
