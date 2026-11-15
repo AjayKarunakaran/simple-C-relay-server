@@ -28,10 +28,12 @@ simplest way to run this for free
    ddclient automatically changes the A record listed in your dns provider to point to your server hosted in the cloud
 
 6. run ddclient as a systemd service and run certbot
+   
    sudo systemctl enable ddclient
+
    sudo certbot certonly --standalone -d yourdomain.com
 
    now you have subdomain.domain.com which is pointing to your server with ssl records in etc/letsencrypt/live/
-7. write or compile the script put it in the bin directory and run it automatically with systemd
+8. write or compile the script put it in the bin directory and run it automatically with systemd
 
 yay you have a server repeater for free
